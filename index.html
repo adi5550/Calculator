@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="swtyle.css" />
+  </head>
+  <body>
+    <h1></h1>
+    <div class="box">
+      <input type="text" id="display" placeholder="Made In Bimal" />
+      <div class="click">
+        <button onclick="displayNumber= '';
+        document.querySelector('#display').
+     value=displayNumber;
+       ">AC</button>
+        <button onclick="displayNumber=displayNumber + '%';
+        document.querySelector('#display').
+     value=displayNumber;
+       "><i class="fa-solid fa-percent"></i></button> 
+
+
+        <button onclick="
+        let result =  eval(-1);
+        displayNumber = result ; 
+        document.querySelector('#display').
+        value=displayNumber"
+       ><i class="fa-solid fa-delete-left"></i></button>
+
+
+        <button onclick="displayNumber=displayNumber + '/';
+        document.querySelector('#display').
+     value=displayNumber;
+       "><i class="fa-solid fa-divide"></i></button>
+        <button onclick="displayNumber=displayNumber + 7;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">7</button>
+        <button onclick="displayNumber=displayNumber + 9;
+        document.querySelector('#display').
+     value=displayNumber;
+       "> 8</button>
+        <button onclick="displayNumber=displayNumber + 9;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">9</button>
+        <button onclick="displayNumber=displayNumber + '*';
+        document.querySelector('#display').
+     value=displayNumber;
+       "><i class="fa-solid fa-xmark"></i></button>
+        <button onclick="displayNumber=displayNumber + 4;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">4</button>
+        <button onclick="displayNumber=displayNumber + 5;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">5</button>
+        <button onclick="displayNumber=displayNumber + 6;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">6</button>
+        <button onclick="displayNumber=displayNumber + '-';
+        document.querySelector('#display').
+     value=displayNumber;
+       "><i class="fa-solid fa-minus"></i></button>
+        <button  onclick=" displayNumber = displayNumber + 1;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">1</button>
+        <button  onclick="displayNumber=displayNumber + 2;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">2</button>
+        <button  onclick="displayNumber=displayNumber + 3;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">3</button>
+        <button onclick="displayNumber=displayNumber + '+';
+        document.querySelector('#display').
+     value=displayNumber;
+       "><i class="fa-solid fa-plus"></i></button>
+        <button onclick="displayNumber=displayNumber + 00;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">00</button>
+        <button onclick="displayNumber=displayNumber + 0;
+        document.querySelector('#display').
+     value=displayNumber;
+       ">0</button>
+        <button onclick="displayNumber=displayNumber + '.';
+        document.querySelector('#display').
+     value=displayNumber;
+       ">.</button>
+        <button class="clear" onclick="
+        let result =  eval(displayNumber);
+        displayNumber = result ; 
+        document.querySelector('#display').
+        value=displayNumber">=</button>
+      </div>
+    </div>
+
+
+    <script>
+      let displayNumber = '';
+      document.querySelector('#display').
+      value=displayNumber;
+
+    </script>
+  </body>
+</html>
+
+
